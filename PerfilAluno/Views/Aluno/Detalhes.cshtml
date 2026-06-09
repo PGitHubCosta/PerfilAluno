@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Detalhes do Aluno";
+}
+
+<div style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; max-width: 400px; background-color: #f9f9f9;">
+    <h2 style="color: #28a745; margin-top: 0;">Detalhes Acadêmicos</h2>
+    
+    <!-- Exibindo o ID que veio do método Detalhes(int id) -->
+    <p><strong>ID do Aluno no Sistema:</strong> <span style="font-size: 1.2em; color: #28a745;">@ViewBag.IdAluno</span></p>
+    
+    <p><strong>Nome Completo:</strong> @ViewBag.Nome</p>
+    <p><strong>R.A.:</strong> @ViewBag.RA</p>
+    <p><strong>Situação da Matrícula:</strong> @ViewBag.StatusMatricula</p>
+    
+    <hr>
+    <a href="/Aluno" style="color: #007bff; text-decoration: none;">← Voltar para o Perfil</a>
+</div>
